@@ -21,5 +21,5 @@
     </ng-template-->
     <p *ngIf="serverCreated">Server was created, server name is {{ serverName }}</p>
 <br><br>
-<app-server></app-server>
-<app-server></app-server>
+<!--app-server></app-server-->
+<app-server *ngFor="let server of servers"></app-server>
